@@ -1,0 +1,13 @@
+@import "vars";
+@import "libs";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+@import "layouts/index";

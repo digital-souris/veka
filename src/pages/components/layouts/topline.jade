@@ -1,0 +1,22 @@
+
+.topline
+    .container
+        .row
+            .col-2.col-lg-1
+                //Выбор города
+                .city
+                    span Мосвка
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6L0.535898 0L7.4641 0L4 6Z" fill="#1E1E1E"/>
+                    </svg>
+            .col-6.col-lg-4
+                ul.topline__menu
+                    - for (var x = 0; x < 6; x++)
+                        li
+                            a(href="#") Отзывы
+            .col-4.col-lg-3.offset-lg-4
+                .topline__right
+                    .topline__phone
+                        a(href='#') 8 (800) 707-39-84
+                    .topline__callback
+                        a(href='#') Заказать звонок
