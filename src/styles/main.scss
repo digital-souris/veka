@@ -1,5 +1,6 @@
 @import "vars";
 @import "libs";
+@import "fonts";
 * {
   box-sizing: border-box;
 }
@@ -9,5 +10,6 @@ body {
   line-height: 1.5;
   min-width: 320px;
   overflow-x: hidden;
+  font-family: Cera, sans-serif;
 }
 @import "layouts/index";

@@ -1,1 +1,20 @@
 @import "topline";
+
+.wrapper {
+  max-width: 1440px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+  &_f {
+    display: flex;
+  }
+  &_jcsb {
+    justify-content: space-between;
+  }
+  &_jcfs {
+    justify-content: flex-start;
+  }
+  &_aic {
+    align-items: center;
+  }
+}

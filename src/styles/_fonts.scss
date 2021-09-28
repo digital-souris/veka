@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Cera';
+  font-weight: normal;
+  font-style: normal;
+  src:
+    url("../fonts/CeraVEKA-Regular.woff") format('woff'),
+    url("../fonts/CeraVEKA-Regular.woff2") format('woff2'),
+    url("../fonts/CeraVEKA-Regular.eot") format('eot');
+}
+@font-face {
+  font-family: 'Cera';
+  font-weight: 300;
+  font-style: normal;
+  src:
+          url("../fonts/CeraVEKA-Light.woff") format('woff'),
+          url("../fonts/CeraVEKA-Light.woff2") format('woff2'),
+          url("../fonts/CeraVEKA-Light.eot") format('eot');
+}
+@font-face {
+  font-family: 'Cera';
+  font-weight: 700;
+  font-style: normal;
+  src:
+          url("../fonts/CeraVEKA-Bold.woff") format('woff'),
+          url("../fonts/CeraVEKA-Bold.woff2") format('woff2'),
+          url("../fonts/CeraVEKA-Bold.eot") format('eot');
+}
