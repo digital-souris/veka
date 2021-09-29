@@ -1,0 +1,173 @@
+.card {
+  width: 332px;
+  margin: 0 7px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  transition: all .25s;
+  border: 3px solid transparent;
+  margin-bottom: -30px;
+  z-index: 1;
+  &:hover {
+    background: #F5F9FF;
+    border-color: #0069B4;
+    z-index: 2;
+    .card__footer {
+      opacity: 1;
+    }
+  }
+  &__event {
+    position: absolute;
+    top: -3px;
+    right: 27px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    /* or 179% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 3;
+    color: #FFFFFF;
+    background: #67ADD7;
+    width: 80px;
+    height: 30px;
+  }
+  &__image {
+    img {
+      vertical-align: top;
+      max-width: 230px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  &__content {
+    padding-left: 5px;
+  }
+  &__topline {
+    padding-top: 6px;
+  }
+  &__promo {
+    background: #004678;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 25px;
+    /* or 192% */
+
+
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 30px;
+  }
+  &__article {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+
+
+    color: #67ADD7;
+
+  }
+  &__title {
+    padding-top: 28px;
+    max-width: 230px;
+    a {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      /* or 137% */
+
+
+      color: #1E1E1E;
+
+    }
+  }
+  &__count {
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+
+
+    color: #0069B4;
+  }
+  &__prices {
+    padding-top: 30px;
+  }
+  &__price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    /* or 125% */
+    color: #404040;
+  }
+  &__old {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    /* identical to box height, or 179% */
+
+    text-decoration: line-through;
+    color: #6E6E6E;
+  }
+  &__footer {
+    padding-top: 30px;
+    opacity: 0;
+    transition: all .25s;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0069B4;
+      height: 40px;
+      width: 154px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      /* or 167% */
+      text-align: center;
+
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  &__icons {
+    a {
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:hover {
+        svg {
+          * {
+            fill: #0069B4
+          }
+        }
+      }
+    }
+    svg {
+      * {
+        fill: #999999
+      }
+    }
+  }
+}

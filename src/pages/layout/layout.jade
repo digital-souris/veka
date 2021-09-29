@@ -4,15 +4,19 @@ html
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css" integrity="sha512-qP7Bo11vBMwOisDf5u5XX4EG7PwtuTha6Ghh864As/xLSKdD5BbW5gVE2Tym6VerZFEev9OmmHV2BKuanp/WaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.theme.min.css" integrity="sha512-KHRZlYOTiXpB0ZlmJrpqSZYxSl6XS8LJ7LoGFroB0BszBr6DcZYZK7C8oIfviPKmcDR0dI2ilaGxBAb4+0VsmA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         link(rel='stylesheet' type='text/css' href='/main.css')
     body
         .page
             .page__content
                 include ../components/layouts/topline.jade
                 include ../components/layouts/topheader.jade
-                block content
+                .page__wrap
+                    block content
             .page__footer
                 include ../components/layouts/footer.jade
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js" integrity="sha512-NQWLm7ozXeOcDB639QSEzUWiNDEKD/mPKDIH256UYr9V7dwqF6OW4+1AEAVSaY6iaCaJzjjAR2GV6bPBYEzHig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         script(src="/js/main.js")

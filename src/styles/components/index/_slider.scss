@@ -1,0 +1,148 @@
+.slider {
+  padding-top: 7px;
+
+  &__item {
+    min-height: 460px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 115px;
+    position: relative;
+    @include media(992) {
+      padding: 40px 95px;
+    }
+    @include media(768) {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    @include media(768) {
+      padding: 40px 11px 60px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__image {
+    max-width: 452px;
+    @include media(992) {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      max-width: 354px;
+      transform: translateY(-50%);
+    }
+    @include media(768) {
+      position: static;
+      transform: translateY(0);
+      margin: 0 auto;
+    }
+
+    img {
+      max-width: 100%;
+      vertical-align: top;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    cursor: pointer;
+    @include media(768) {
+      display: none;
+    }
+
+    &.slick-disabled {
+      display: none;
+    }
+
+    &_prev {
+      left: 12px;
+    }
+
+    &_next {
+      right: 12px;
+    }
+  }
+
+  &__content {
+    max-height: 240px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    max-width: 662px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 50px;
+    /* or 111% */
+
+
+    color: #FFFFFF;
+    @include media(768) {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  &__text {
+    padding-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    /* or 250% */
+    color: #FFFFFF;
+    @include media(768) {
+      font-size: 18px;
+    }
+  }
+
+  &__button {
+    padding-top: 40px;
+
+    a {
+      display: flex;
+      height: 50px;
+      width: 185px;
+      justify-content: center;
+      align-items: center;
+      background: #FFFFFF;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 35px;
+      /* or 219% */
+
+
+      color: rgba(0, 105, 180, 0.95);
+      text-decoration: none;
+    }
+  }
+
+  .slick-dots {
+    bottom: 10px;
+
+    li *{
+      outline: none;
+    }
+
+    li.slick-active {
+      svg * {
+        fill: #0B1742;
+      }
+    }
+  }
+
+  .slick-dots li button:before {
+    display: none;
+  }
+}

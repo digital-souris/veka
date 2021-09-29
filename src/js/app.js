@@ -8,6 +8,31 @@ $(document).ready(function () {
     $('.nav__category').click(function () {
         $('.nav__drop').slideToggle()
     })
+
+})
+$(function () {
+    $('.js-first-slider').not('.slick-initialized').slick({
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        prevArrow: $('.slider__arrow_prev'),
+        nextArrow: $('.slider__arrow_next'),
+        customPaging: function() {
+            return '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+            '<path d="M6 1L11 6L6 11L1 6L6 1Z" stroke="#0B1742"/>' +
+            '</svg>'
+        },
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
+    })
 })
 $(window).resize(function () {
     getTopLineMenuAdaptive()

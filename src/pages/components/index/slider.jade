@@ -1,0 +1,23 @@
+.slider
+    .wrapper
+        .slider__wrapper
+            .slider__arrow.slider__arrow_prev
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 -1.09278e-06L50 25L25 50L-1.09278e-06 25L25 -1.09278e-06Z" fill="#0B1742"/>
+                <path d="M24.5 18.7071L24.5 31.2929L18.2071 25L24.5 18.7071Z" stroke="white"/>
+                </svg>
+            .slider__arrow.slider__arrow_next
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 50L2.98122e-07 25L25 2.98122e-07L50 25L25 50Z" fill="#0B1742"/>
+                <path d="M25.5 31.2929L25.5 18.7071L31.7929 25L25.5 31.2929Z" stroke="white"/>
+                </svg>
+            .js-first-slider
+                - for(var x = 0; x < 4; x++)
+                    .slider__item(style='background-image: url(../img/slide-bg.jpg)')
+                        .slider__content
+                            h1.slider__title Заголовок оффера в несколько строй
+                            p.slider__text Доп текст или призыв к действи
+                            .slider__button
+                                a(href='#') Подробнее
+                        .slider__image
+                            img(src="../img/slide-img.png" alt='123')

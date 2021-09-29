@@ -1,0 +1,10 @@
+.title {
+  font-style: normal;
+  font-weight: bold;
+  &_dark {
+    color: #1E1E1E;
+  }
+  &_second {
+    font-size: 30px;
+  }
+}
