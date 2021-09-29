@@ -4,12 +4,26 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  height: 100%;
+}
 body {
   font-size: 16px;
   line-height: 1.5;
   min-width: 320px;
   overflow-x: hidden;
   font-family: Cera, sans-serif;
+  height: 100%;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  &__content {
+    flex: 1 0 auto;
+  }
+  &__footer {
+    flex: 0 0 auto;
+  }
 }
 @import "layouts/index";

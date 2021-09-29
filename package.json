@@ -62,6 +62,7 @@
   "dependencies": {
     "bootstrap": "^5.1.1",
     "jquery": "^3.6.0",
+    "jquery-form-styler": "^2.0.2",
     "reset-css": "^5.0.1"
   }
 }

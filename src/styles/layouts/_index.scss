@@ -1,4 +1,3 @@
-@import "topline";
 
 .wrapper {
   max-width: 1440px;
@@ -14,7 +13,17 @@
   &_jcfs {
     justify-content: flex-start;
   }
+  &_aifs {
+    align-items: flex-start;
+  }
   &_aic {
     align-items: center;
   }
+  &_ais {
+    align-items: stretch;
+  }
 }
+@import "topline";
+@import "header";
+@import "nav";
+@import "footer";

@@ -2,8 +2,17 @@ html
     head
         title 123
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css" integrity="sha512-qP7Bo11vBMwOisDf5u5XX4EG7PwtuTha6Ghh864As/xLSKdD5BbW5gVE2Tym6VerZFEev9OmmHV2BKuanp/WaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.theme.min.css" integrity="sha512-KHRZlYOTiXpB0ZlmJrpqSZYxSl6XS8LJ7LoGFroB0BszBr6DcZYZK7C8oIfviPKmcDR0dI2ilaGxBAb4+0VsmA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         link(rel='stylesheet' type='text/css' href='/main.css')
     body
-        include ../components/layouts/topline.jade
-        block content
+        .page
+            .page__content
+                include ../components/layouts/topline.jade
+                include ../components/layouts/topheader.jade
+                block content
+            .page__footer
+                include ../components/layouts/footer.jade
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js" integrity="sha512-NQWLm7ozXeOcDB639QSEzUWiNDEKD/mPKDIH256UYr9V7dwqF6OW4+1AEAVSaY6iaCaJzjjAR2GV6bPBYEzHig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         script(src="/js/main.js")

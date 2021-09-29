@@ -1,9 +1,12 @@
-import $ from 'jquery'
 
 $(document).ready(function () {
     getTopLineMenuAdaptive()
     $(document).on('click','.topline__drop', function () {
         $('.topline__dropdown').slideToggle()
+    })
+    $('.js-select').styler()
+    $('.nav__category').click(function () {
+        $('.nav__drop').slideToggle()
     })
 })
 $(window).resize(function () {

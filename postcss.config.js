@@ -1,7 +1,7 @@
 const sprites = require("postcss-sprites");
 const spriteOptions = {
   stylesheetPath: "./src/styles",
-  spritePath: "./src/images/sprites",
+  spritePath: "./src/img/sprites",
   filterBy: file => {
     console.log("Background ", file);
     return new Promise((resolve, reject) => {
