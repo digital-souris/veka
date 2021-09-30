@@ -1,6 +1,12 @@
 section.section.section_populars
     .wrapper
-        h2.title.title_second.title_dark Популярные
-        .populars.wrapper_f.wrapper_aifs.wrapper_jcfs
+        .populars__head.wrapper_f.wrapper_jcsb.wrapper_aic
+            h2.title.title_second.title_dark Популярные
+            .populars__all
+                a(href='#') Все
+                    <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 4L0 7.4641L0 0.535898L6 4Z" fill="#1E1E1E"/>
+                    </svg>
+        .populars.wrapper_f.wrapper_aifs.wrapper_jcfs.js-populars
             - for(var x = 0; x < 12; x++)
-                include ../items/card.jade
+                include ../items/card-slider.jade

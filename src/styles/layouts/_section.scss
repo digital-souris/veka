@@ -1,5 +1,25 @@
 .section {
   &_populars {
     padding-top: 55px;
+    @include media(992) {
+      .wrapper {
+        padding: 0;
+      }
+    }
+  }
+  &_sliders {
+    padding-top: 40px;
+    @include media(992) {
+      padding-top: 20px;
+      .wrapper {
+        flex-direction: column;
+      }
+    }
+  }
+  &_catalog {
+    padding-top: 80px;
+  }
+  &_about {
+    padding-top: 101px;
   }
 }

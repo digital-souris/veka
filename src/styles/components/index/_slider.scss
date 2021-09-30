@@ -128,21 +128,4 @@
     }
   }
 
-  .slick-dots {
-    bottom: 10px;
-
-    li *{
-      outline: none;
-    }
-
-    li.slick-active {
-      svg * {
-        fill: #0B1742;
-      }
-    }
-  }
-
-  .slick-dots li button:before {
-    display: none;
-  }
 }

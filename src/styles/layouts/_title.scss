@@ -7,4 +7,23 @@
   &_second {
     font-size: 30px;
   }
+
+  &_normal {
+    font-weight: normal;
+  }
+
+  &_line {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+  &_catalog {
+    margin-bottom: 20px;
+  }
+  &_about {
+    padding-bottom: 50px;
+    @include media(992) {
+      padding-bottom: 19px;
+    }
+  }
 }

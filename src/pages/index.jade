@@ -3,3 +3,43 @@ extends layout/layout.jade
 block content
     include components/index/slider.jade
     include components/index/populars.jade
+    .section.section_sliders
+        .wrapper.wrapper_f.wrapper_jcsb.wrapper_aifs
+            include components/items/slide-item.jade
+            include components/items/slide-item.jade
+    section.section.section_catalog
+        .wrapper
+            h2.title.title_second.title_line.title_catalog Каталог
+            .index-catalog.wrapper_f.wrapper_jcfs.wrapper_aifs
+                - for(var x = 0; x < 8; x++)
+                    .index-catalog__wrap
+                        h4.index-catalog__title Категория 1 уровня
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 0L7.4641 6H0.535898L4 0Z" fill="#1E1E1E"/>
+                            </svg>
+                        ul.index-catalog__list
+                            - for(var y = 0; y < 8; y++)
+                                li
+                                    a(href='#') Категория 2 уровня (145)
+                            li.index-catalog__all
+                                a(href='#') Все товары
+                                    <svg width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.9515 4.35355C30.1467 4.15829 30.1467 3.84171 29.9515 3.64645L26.7695 0.464466C26.5742 0.269204 26.2577 0.269204 26.0624 0.464466C25.8671 0.659728 25.8671 0.976311 26.0624 1.17157L28.8908 4L26.0624 6.82843C25.8671 7.02369 25.8671 7.34027 26.0624 7.53553C26.2577 7.7308 26.5742 7.7308 26.7695 7.53553L29.9515 4.35355ZM0 4.5H29.5979V3.5H0V4.5Z" fill="#437FC8"/>
+                                    </svg>
+    section.section.section_catalog
+        .wrapper
+            h2.title.title_second.title_line.title_catalog Новости
+            .news-wrap.js-news.wrapper_f.wrapper_jcfs.wrapper_ais
+                - for(var y = 0; y < 4; y++)
+                    include components/items/news-item.jade
+    section.section.section_about
+        .wrapper
+            h2.title.title_second.title_about О компании VEKA
+            .about.wrapper_f.wrapper_jcsb.wrapper_aifs
+                .about__item.content
+                    p Вся продукция VEKA Rus имеет необходимые сертификаты и может использоваться во всех климатических зонах, включая регионы Крайнего Севера и районы с резко континентальным климатом, повышенной влажностью и сверхнормативными ветровыми нагрузками. 25 марта 2004 года VEKA стала первой западной экструзионной компанией в России, получившей сертификат соответствия стандарту качества DIN ISO 9001:2000.
+                .about__item.content
+                    p Вся продукция VEKA Rus имеет необходимые сертификаты и может использоваться во всех климатических зонах, включая регионы Крайнего Севера и районы с резко континентальным климатом, повышенной влажностью и сверхнормативными ветровыми нагрузками. 25 марта 2004 года VEKA стала первой западной экструзионной компанией в России, получившей сертификат соответствия стандарту качества DIN ISO 9001:2000.
+                .about__link
+                    a(href='#') Читать еще
+    include components/layouts/callback.jade
