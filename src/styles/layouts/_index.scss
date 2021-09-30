@@ -10,6 +10,9 @@
   &_jcsb {
     justify-content: space-between;
   }
+  &_jcfe {
+    justify-content: flex-end;
+  }
   &_jcfs {
     justify-content: flex-start;
   }
@@ -32,3 +35,5 @@
 @import "content";
 @import "callback";
 @import "breadcrumbs";
+@import "paginator";
+@import "sidebar";

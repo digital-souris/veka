@@ -8,5 +8,5 @@ module.exports = {
   minifyJS: true,
   minifyCSS: true,
   homePage: "index.html",
-  templateFiles: ["./src/pages/index.jade", "./src/pages/catalog.jade"]
+  templateFiles: ["./src/pages/index.jade", "./src/pages/catalog.jade", './src/pages/catalog-list.jade']
 };

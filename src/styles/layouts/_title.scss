@@ -7,6 +7,9 @@
   &_second {
     font-size: 30px;
   }
+  &_third {
+    font-size: 24px;
+  }
 
   &_normal {
     font-weight: normal;
@@ -35,5 +38,8 @@
 
     font-feature-settings: 'ss06' on;
     //padding-top: 10px;
+  }
+  &_content {
+    margin-bottom: 30px;
   }
 }

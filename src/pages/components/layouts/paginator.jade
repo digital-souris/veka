@@ -1,0 +1,20 @@
+ul.pagination
+    li.disabled
+        span
+            <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.578125 3.90625L6.57813 0.442148L6.57813 7.37035L0.578125 3.90625Z" fill="#999999"/>
+            </svg>
+    li.active
+        a(href='#') 1
+    - for(var x = 0; x < 3; x++)
+        li
+            a(href='#')=x+2
+    li
+        span ...
+    li
+        a(href='#') 17
+    li
+        a(href='#')
+            <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.78955 3.90625L0.78955 7.37035L0.789551 0.442148L6.78955 3.90625Z" fill="#404040"/>
+            </svg>

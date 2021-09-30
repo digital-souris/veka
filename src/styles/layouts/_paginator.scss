@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  a, span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 35px;
+    /* or 219% */
+
+
+    color: #1E1E1E;
+    text-decoration: none;
+    margin: 0 6px;
+  }
+  li {
+    &.disabled {
+      a, span {
+        svg {
+          fill: #999999
+        }
+      }
+    }
+    &.active {
+      span, a {
+        font-weight: bold;
+      }
+    }
+  }
+}

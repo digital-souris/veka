@@ -4,10 +4,12 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 25px;
+    margin-bottom: 20px;
     /* or 156% */
-
-
     color: #1E1E1E;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
 }

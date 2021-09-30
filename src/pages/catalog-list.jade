@@ -7,9 +7,18 @@ block content
         include components/pages/subcategories.jade
         include components/pages/quicklinks.jade
         include components/pages/filter.jade
-        .catalog.wrapper_f.wrapper_jcfs.wrapper_aifs
-            - for(var x = 0; x < 12; x++)
-                include components/items/card.jade
+        .catalog
+            .catalog-list.wrapper_f.wrapper_jcsb.wrapper_aifs
+                .catalog-list__wrap.wrapper_f.wrapper_jcfs.wrapper_aifs
+                    - for(var x = 0; x < 12; x++)
+                        include components/items/card-list.jade
+                .catalog-list__sidebar
+                    .sidebar.sidebar_catalog(style='background: #0B1742')
+                        h3.sidebar__title.sidebar__title_white
+                            a(href='#') Заголовок - описание группы выбранной и картинка её или иконка
+                        .sidebar__image
+                            a(href='#')
+                                img(src='../img/card-img.png')
         .catalog__load
             a(href='#') Показать еще 20 товаров
         include components/layouts/paginator.jade

@@ -6,7 +6,19 @@ $(document).ready(function () {
     $(document).on('click','.topline__drop', function () {
         $('.topline__dropdown').slideToggle()
     })
-    $('.js-select').styler()
+    $(document).on('click', '.filter__arrow, .filter__name', function () {
+        $(this).closest('.filter__item').toggleClass('active')
+        $(this).closest('.filter__item').find('.filter__dropdown').slideToggle()
+    })
+    $(document).on('click', '.mobile-filter__cross', function () {
+        $('.mobile-filter').slideUp()
+    })
+    $(document).on('click', '.filter__mobile', function (e) {
+        e.preventDefault()
+        $('.mobile-filter').slideDown()
+        return false
+    })
+    $('.js-select, .js-check').styler()
     $('.nav__category').click(function () {
         $('.nav__drop').slideToggle()
     })

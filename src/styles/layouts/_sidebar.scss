@@ -1,0 +1,28 @@
+.sidebar {
+  &_catalog {
+    padding: 29px 11px 33px 24px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 25px;
+    a {
+      text-decoration: none;
+    }
+    &_white {
+      a {
+        color: #fff;
+      }
+    }
+  }
+  &__image {
+    max-width: 180px;
+    margin: 0 auto;
+    img {
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+}
