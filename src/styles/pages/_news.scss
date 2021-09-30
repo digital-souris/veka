@@ -1,0 +1,28 @@
+.news {
+  flex-wrap: wrap;
+  padding-top: 16px;
+  &__banner {
+    max-width: 335px;
+    width: 100%;
+    //height: 200%;
+    padding: 53px 47px 53px 53px;
+    margin-right: 15px;
+    background: linear-gradient(15.37deg, #142840 5.12%, #1A467C 91.24%);
+    //min-height: 516px;
+    margin-bottom: 20px;
+    flex-grow: 2;
+  }
+  &__title {
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+      /* or 150% */
+
+
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  }
+}
