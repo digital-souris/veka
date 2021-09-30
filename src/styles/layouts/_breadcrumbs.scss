@@ -1,0 +1,24 @@
+.breadcrumbs {
+  padding-top: 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 35px;
+  /* or 250% */
+
+
+  color: #1E1E1E;
+  @include media(992) {
+    padding-top: 30px;
+  }
+  @include media(768) {
+    padding-top: 50px;
+  }
+  a {
+    color: #1e1e1e;
+    text-decoration: none;
+  }
+  .separator {
+    margin: 0 3px;
+  }
+}

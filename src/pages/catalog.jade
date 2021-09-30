@@ -1,0 +1,16 @@
+extends layout/layout.jade
+
+block content
+    include components/layouts/breadcrumbs.jade
+    .wrapper
+        h1.title.title_main.title_dark Категория 2
+        .subcategories.wrapper_f.wrapper_jcfs.wrapper_aifs
+            - for(var x = 0; x < 4; x++)
+                .subcategories__item
+                    .subcategories__wrap
+                        .subcategories__image
+                            a(href='#')
+                                img(src='../img/card-img.png' alt='123')
+                        a(href='#').subcategories__content
+                            .subcategories__count 10 товаров
+                            .subcategories__title Категория 2 уровня

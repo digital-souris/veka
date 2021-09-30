@@ -26,4 +26,14 @@
       padding-bottom: 19px;
     }
   }
+
+  &_main {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    /* or 78% */
+
+    font-feature-settings: 'ss06' on;
+    //padding-top: 10px;
+  }
 }
