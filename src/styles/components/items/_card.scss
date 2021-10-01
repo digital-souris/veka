@@ -38,6 +38,10 @@
     padding: 17px 30px;
     position: relative;
   }
+  &_sidebar {
+    width: 100%;
+    max-width: 100%;
+  }
   &:hover {
     background: #F5F9FF;
     border-color: #0069B4;

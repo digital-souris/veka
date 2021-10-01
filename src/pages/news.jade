@@ -5,17 +5,32 @@ block content
     .wrapper
         h1.title.title_main.title_dark Новости и обзоры
         .news.wrapper_f.wrapper_ais.wrapper_jcfs
-            .news__banner
-                h3.news__title
-                    a(href='#') Заголовок - описание группы выбранной и картинка её или иконка
-            .news-item.news-item_big
-                .news-item__image.news-item__image_big
-                    a(href='#')
-                        img(src='../img/news.jpg' alt='123')
-                .news-item__content.news-item__content_big
-                    h3.news-item__title
-                        a(href='#') Заголовок новости до вдух строк максимально остальной текст уходит в многоточие
-                    .news-item__type Анонс новости
+            .news__top.wrapper_f.wrapper_jcfs.wrapper_ais
+                .news__banner
+                    h3.news__title
+                        a(href='#') Заголовок - описание группы выбранной и картинка её или иконка
+                    .news__image
+                        a(href='#')
+                            img(src='../img/card-img.png' alt='123')
+                .news__topline.wrapper_f.wrapper_jcfs.wrapper_ais
+                    .news-item.news-item_big
+                        .news-item__image.news-item__image_big
+                            a(href='#')
+                                img(src='../img/news.jpg' alt='123')
+                        .news-item__content.news-item__content_big
+                            h3.news-item__title
+                                a(href='#') Заголовок новости до вдух строк максимально остальной текст уходит в многоточие
+                            .news-item__type Анонс новости
+                    - for(var y = 0; y < 4; y++)
+                        .news-item.news-item
+                            .news-item__image.news-item__image_big
+                                a(href='#')
+                                    img(src='../img/news.jpg' alt='123')
+                            .news-item__content.news-item__content_big
+                                h3.news-item__title
+                                    a(href='#') Заголовок новости до вдух строк максимально остальной текст уходит в многоточие
+                                .news-item__type Анонс новости
+
             - for(var x = 0; x < 13; x++)
                 .news-item
                     .news-item__image

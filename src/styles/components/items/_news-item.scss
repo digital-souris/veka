@@ -14,6 +14,10 @@
     width: 50%;
     max-width: calc(335px * 2 + 15px);
   }
+  &_sidebar {
+    max-width: 100%;
+    width: 100%;
+  }
   @include media(992) {
     &_slide {
       width: 100%;
