@@ -15,6 +15,7 @@ module.exports = {
         './src/pages/news.jade',
         './src/pages/news-item.jade',
         './src/pages/return.jade',
-        './src/pages/delivery.jade'
+        './src/pages/delivery.jade',
+        './src/pages/contacts.jade'
     ]
 };

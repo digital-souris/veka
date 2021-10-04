@@ -5,6 +5,9 @@
   &_status {
     padding-top: 80px;
   }
+  &_contacts {
+    padding-top: 40px;
+  }
   &__form {
     padding-top: 10px;
     @include media(992) {
@@ -67,6 +70,18 @@
       @include media(768) {
         width: 48%;
       }
+    }
+    &_quarter {
+      width: 25%;
+      max-width: 332px;
+      @include media(992) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    &_textarea {
+      width: 100%;
+      max-width: 1044px;
     }
     &_full {
       width: 100%;
@@ -158,7 +173,7 @@
       transform: translateY(-50%);
     }
   }
-  &__input {
+  &__input, &__textarea {
     width: 100%;
     height: 45px;
     line-height: 45px;
@@ -173,6 +188,12 @@
 
     color: #404040;
   }
+  &__textarea {
+    line-height: 1.5;
+    padding: 18px;
+    resize: vertical;
+    min-height: 120px;
+  }
   &__button {
     padding-top: 80px;
     @include media(768) {
@@ -182,6 +203,17 @@
     }
     &_call {
       padding-top: 30px;
+    }
+    &_contacts {
+      padding-top: 80px;
+      max-width: 271px;
+      width: 100%;
+      @include media(992) {
+        padding-top: 20px;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 40px;
+      }
     }
     button {
       background: #0069B4;
