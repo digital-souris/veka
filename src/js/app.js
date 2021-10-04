@@ -61,7 +61,7 @@ $(document).ready(function () {
         $('.mobile-filter').slideDown()
         return false
     })
-    $('.js-select, .js-check, .js-file').styler()
+    $('.js-select, .js-check, .js-file, .js-radio, .js-date').styler()
     $('.nav__category').click(function () {
         $('.nav__drop').slideToggle()
     })
@@ -98,6 +98,17 @@ $(function () {
             }
         ]
     })
+    if($('.basket').length) {
+        const top = $('.basket__wrap').position().top
+        const bottom = $('.basket__wrap').height()
+        $(document).scroll(function (e) {
+            const s = $(window).scrollTop()
+            console.log(s)
+            if (s > top && s < bottom) {
+                $('.basket__order').css('top', s - top + 10)
+            }
+        })
+    }
 })
 $(window).resize(function () {
     getTopLineMenuAdaptive()

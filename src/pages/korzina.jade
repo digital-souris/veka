@@ -1,0 +1,119 @@
+extends layout/layout.jade
+
+block content
+    include components/layouts/breadcrumbs.jade
+    .wrapper
+        h1.title.title_main.title_dark Корзина
+        .basket
+            .basket__wrap
+                .basket__items
+                    - for(var x = 0; x < 5; x++)
+                        .basket__item.wrapper_f.wrapper_jcsb.wrapper_aifs
+                            .basket__left.wrapper_f.wrapper_jcfs.wrapper_aifs
+                                .basket__image
+                                    a(href='#')
+                                        img(src='../img/card-img.png')
+                                .basket__content
+                                    h3.basket__title
+                                        a(href='#') НАзвание товара тут
+                                    .basket__article Арт: 12345678
+                                    .basket__characteristic
+                                        p Свойство1 - Белый
+                            .basket__right.wrapper_f.wrapper_jcfs.wrapper_aifs
+                                .basket__count.wrapper_f.wrapper_jcsb.wrapper_aic
+                                    .basket__counter.js-count-minus
+                                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="25.5" y="1.45833" width="34" height="34" transform="rotate(45 25.5 1.45833)" stroke="#C4C4C4"/>
+                                        </svg>
+                                        span -
+                                    .backet__iter.js-count 1
+                                    .basket__counter.js-count-plus
+                                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="25.5" y="1.45833" width="34" height="34" transform="rotate(45 25.5 1.45833)" stroke="#C4C4C4"/>
+                                        </svg>
+                                        span +
+                                .basket__pricing
+                                    .basket__price 100 000 ₽
+                                    .basket__oldprice 180 000 ₽
+                                    .basket__delete
+                                        a(href='#')
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.06083 6.40114L11.8273 1.63467C11.9951 1.46685 11.9951 1.19478 11.8273 1.02698C11.6595 0.859191 11.3874 0.85917 11.2196 1.02698L6.45312 5.79346L1.68667 1.02698C1.51886 0.85917 1.24678 0.85917 1.07899 1.02698C0.911193 1.1948 0.911171 1.46688 1.07899 1.63467L5.84544 6.40112L1.07899 11.1676C0.911171 11.3354 0.911171 11.6075 1.07899 11.7753C1.16288 11.8592 1.27286 11.9011 1.38284 11.9011C1.49282 11.9011 1.60277 11.8592 1.68669 11.7753L6.45312 7.00882L11.2196 11.7753C11.3035 11.8592 11.4134 11.9011 11.5234 11.9011C11.6334 11.9011 11.7434 11.8592 11.8273 11.7753C11.9951 11.6075 11.9951 11.3354 11.8273 11.1676L7.06083 6.40114Z" fill="#437FC8"/>
+                                            </svg>
+                                            | Удалить
+                .form.form_basket
+                    .basket__form
+                        .content
+                            h3 Способ доставки
+                        .form__radios.wrapper_f.wrapper_jcfs.wrapper_aic
+                            .form__radio.form__radio_big
+                                label
+                                    input(type='radio' name='delivery' class='js-radio')
+                                    span Доставка курьером
+                                input(type='date').form__date.js-date
+                            .form__radio
+                                label
+                                    input(type='radio' name='delivery' class='js-radio')
+                                    span Доставка курьером
+
+                    .basket__form
+                        .content
+                            h3 Способ оплаты
+                        .form__radios.wrapper_f.wrapper_jcfs.wrapper_aic
+                            .form__radio
+                                label
+                                    input(type='radio' name='delivery' class='js-radio')
+                                    span Доставка курьером
+                            .form__radio
+                                label
+                                    input(type='radio' name='delivery' class='js-radio')
+                                    span Доставка курьером
+                            .form__radio
+                                label
+                                    input(type='radio' name='delivery' class='js-radio')
+                                    span Доставка курьером
+                    .basket__form
+                        .content
+                            h3 Контактные данные
+                        .form__left.form__left_full
+                            .wrapper_f.wrapper_jcsb.wrapper_aifs.wrapper_wrap
+                                .form__item.form__item_half
+                                    label( class='form__label') Введите номер заказа
+                                    .form__wrap
+                                        input(type='text' class='form__input')
+                                .form__item.form__item_half
+                                    label( class='form__label') Введите номер заказа
+                                    .form__wrap
+                                        input(type='text' class='form__input')
+                                .form__item.form__item_half
+                                    label( class='form__label') Введите номер заказа
+                                    .form__wrap
+                                        input(type='text' class='form__input')
+                                .form__item.form__item_half
+                                    label( class='form__label') Введите номер заказа
+                                    .form__wrap
+                                        input(type='text' class='form__input')
+                                .form__item.form__item_half
+                                    label( class='form__label') Введите номер заказа
+                                    .form__wrap
+                                        input(type='text' class='form__input')
+                                .form__item.form__item_half
+                                    label( class='form__label') Введите номер заказа
+                                    .form__wrap
+                                        input(type='text' class='form__input')
+                .basket__order
+                    .basket__head.wrapper_f.wrapper_jcsb.wrapper_aic
+                        span Итого
+                        span 400 00 ₽
+                    .basket__list
+                        .basket__info.wrapper_f.wrapper_jcsb.wrapper_aic
+                            span Товаров 3 шт.
+                            span 540 000 ₽.
+                        .basket__info.wrapper_f.wrapper_jcsb.wrapper_aic
+                            span Товаров 3 шт.
+                            span.red 540 000 ₽
+                        .basket__info.basket__info_delivery
+                            span Доставка
+                            br
+                            span 04.02.2021   10:00-18:00
+                    button.market__button.basket__button Оформить заказ
