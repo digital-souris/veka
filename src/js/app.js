@@ -13,6 +13,49 @@ $(document).ready(function () {
     $(document).on('click', '.mobile-filter__cross', function () {
         $('.mobile-filter').slideUp()
     })
+    $('.js-market-subslider').slick({
+        vertical: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        verticalSwiping: true,
+        asNavFor: '.js-market-main',
+        prevArrow: $('.market__arrow_prev'),
+        nextArrow: $('.market__arrow_next'),
+        focusOnSelect: true
+    })
+    $('.js-market-main').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        asNavFor: '.js-market-subslider',
+        customPaging: function() {
+            return '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                '<path d="M6 1L11 6L6 11L1 6L6 1Z" stroke="#0B1742"/>' +
+                '</svg>'
+        },
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
+    })
+    $('.market__head a').click(function (e) {
+        e.preventDefault()
+        if (!$(this).parent().hasClass('active')) {
+            $('.market__head li').removeClass('active')
+            $(this).parent().addClass('active')
+            $('.market__item').removeClass('active')
+            $($(this).attr('href')).addClass('active')
+        }
+        return false
+    })
     $(document).on('click', '.filter__mobile', function (e) {
         e.preventDefault()
         $('.mobile-filter').slideDown()

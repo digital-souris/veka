@@ -1,5 +1,5 @@
 @import "slider";
-.js-slider, .js-populars, .js-news {
+.js-slider, .js-populars, .js-news, .js-market-main {
   .slick-dots {
     bottom: 10px;
 
@@ -17,6 +17,9 @@
   .slick-dots li button:before {
     display: none;
   }
+}
+.js-market-main {
+
 }
 .populars {
   flex-wrap: wrap;
