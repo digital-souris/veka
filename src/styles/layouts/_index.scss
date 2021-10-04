@@ -25,6 +25,9 @@
   &_ais {
     align-items: stretch;
   }
+  &_wrap {
+    flex-wrap: wrap;
+  }
 }
 @import "topline";
 @import "header";
@@ -37,3 +40,4 @@
 @import "breadcrumbs";
 @import "paginator";
 @import "sidebar";
+@import "from";

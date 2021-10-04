@@ -13,6 +13,8 @@ module.exports = {
         "./src/pages/catalog.jade",
         './src/pages/catalog-list.jade',
         './src/pages/news.jade',
-        './src/pages/news-item.jade'
+        './src/pages/news-item.jade',
+        './src/pages/return.jade',
+        './src/pages/delivery.jade'
     ]
 };

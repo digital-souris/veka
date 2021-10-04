@@ -18,7 +18,7 @@ $(document).ready(function () {
         $('.mobile-filter').slideDown()
         return false
     })
-    $('.js-select, .js-check').styler()
+    $('.js-select, .js-check, .js-file').styler()
     $('.nav__category').click(function () {
         $('.nav__drop').slideToggle()
     })
