@@ -1,0 +1,57 @@
+extends layout/layout.jade
+
+block content
+    include components/layouts/breadcrumbs.jade
+    .wrapper
+        .wrapper_f.wrapper_jcsb.wrapper_aic
+            h1.title.title_main.title_dark Сравнение товаров
+            a(href='#').comparison__delete
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.78654 7.22861L13.4196 1.54001C13.6179 1.33973 13.6179 1.01501 13.4196 0.81476C13.2213 0.614507 12.8997 0.614481 12.7014 0.81476L7.06835 6.50336L1.43528 0.81476C1.23695 0.614481 0.915404 0.614481 0.717104 0.81476C0.518803 1.01504 0.518778 1.33975 0.717104 1.54001L6.35017 7.22858L0.717104 12.9172C0.518778 13.1175 0.518778 13.4422 0.717104 13.6424C0.816254 13.7426 0.946228 13.7926 1.0762 13.7926C1.20618 13.7926 1.33613 13.7426 1.4353 13.6424L7.06835 7.95385L12.7014 13.6424C12.8006 13.7426 12.9305 13.7926 13.0605 13.7926C13.1905 13.7926 13.3204 13.7426 13.4196 13.6424C13.6179 13.4421 13.6179 13.1174 13.4196 12.9172L7.78654 7.22861Z" fill="#6E6E6E"/>
+                </svg>
+                | Очистить сравнение
+        .comparison
+            .comparison__absolute
+                .comparison__top.comparison__top_absolute
+                    label
+                        input(type='checkbox')
+                        span Скрыть одинаковые параметры
+                - for(var x = 0; x < 2;x++)
+                    .comparison__item.comparison__item_head Основные
+                    -for(var y = 0; y < 7; y++)
+                        .comparison__item.comparison__item_cv Свойство 1
+                    .comparison__item.comparison__item_cv.comparison__item_last Свойство
+                .comparison__bottom
+            .comparison__container
+                .comparison__wrapper.wrapper_f.wrapper_jcfs.wrapper_aifs
+                    - for(var z = 0; z < 5; z++)
+                        .comparison__wrap
+                            .comparison__top
+                                a(href='#').comparison__del
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.87424 7.51266L14.7149 1.67178C15.0951 1.29185 15.0951 0.677564 14.7149 0.297639C14.335 -0.0822859 13.7207 -0.0822859 13.3408 0.297639L7.49992 6.13852L1.65922 0.297639C1.27911 -0.0822859 0.665003 -0.0822859 0.285078 0.297639C-0.0950259 0.677564 -0.0950259 1.29185 0.285078 1.67178L6.12579 7.51266L0.285078 13.3535C-0.0950259 13.7335 -0.0950259 14.3477 0.285078 14.7277C0.474417 14.9172 0.723371 15.0124 0.972147 15.0124C1.22092 15.0124 1.4697 14.9172 1.65922 14.7277L7.49992 8.88679L13.3408 14.7277C13.5303 14.9172 13.7791 15.0124 14.0279 15.0124C14.2767 15.0124 14.5254 14.9172 14.7149 14.7277C15.0951 14.3477 15.0951 13.7335 14.7149 13.3535L8.87424 7.51266Z" fill="#999999"/>
+                                    </svg>
+                                .comparison__image
+                                    a(href='#')
+                                        img(src='../img/card-img.png')
+                                .comparison__price 150 300 ₽
+                                .comparison__name
+                                    a(href='#') Название товара в несколько строчек
+                                button.comparison__button Купить
+                            - for(var x = 0; x < 2;x++)
+                                .comparison__item.comparison__item_head
+                                -for (var y = 0; y < 7; y++)
+                                    .comparison__item значение 1
+                                .comparison__item.comparison__item_last значение 1
+                            .comparison__bottom
+                                a(href='#').comparison__del
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.87424 7.51266L14.7149 1.67178C15.0951 1.29185 15.0951 0.677564 14.7149 0.297639C14.335 -0.0822859 13.7207 -0.0822859 13.3408 0.297639L7.49992 6.13852L1.65922 0.297639C1.27911 -0.0822859 0.665003 -0.0822859 0.285078 0.297639C-0.0950259 0.677564 -0.0950259 1.29185 0.285078 1.67178L6.12579 7.51266L0.285078 13.3535C-0.0950259 13.7335 -0.0950259 14.3477 0.285078 14.7277C0.474417 14.9172 0.723371 15.0124 0.972147 15.0124C1.22092 15.0124 1.4697 14.9172 1.65922 14.7277L7.49992 8.88679L13.3408 14.7277C13.5303 14.9172 13.7791 15.0124 14.0279 15.0124C14.2767 15.0124 14.5254 14.9172 14.7149 14.7277C15.0951 14.3477 15.0951 13.7335 14.7149 13.3535L8.87424 7.51266Z" fill="#999999"/>
+                                    </svg>
+                                .comparison__image
+                                    a(href='#')
+                                        img(src='../img/card-img.png')
+                                .comparison__price 150 300 ₽
+                                .comparison__name
+                                    a(href='#') Название товара в несколько строчек
+                                button.comparison__button Купить

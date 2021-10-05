@@ -18,6 +18,7 @@ module.exports = {
         './src/pages/delivery.jade',
         './src/pages/contacts.jade',
         './src/pages/card.jade',
-        './src/pages/korzina.jade'
+        './src/pages/korzina.jade',
+        './src/pages/comparison.jade'
     ]
 };

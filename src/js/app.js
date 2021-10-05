@@ -62,6 +62,18 @@ $(document).ready(function () {
         return false
     })
     $('.js-select, .js-check, .js-file, .js-radio, .js-date').styler()
+    $('.market__header').click(function () {
+        $(this).toggleClass('active')
+        $(this).parent().find('.market__item').slideToggle()
+    })
+    if ($('.comparison__wrapper').length) {
+        if ($(document).width() > 992) {
+            $('.comparison__wrapper').css('width',($('.comparison__wrap').length + 1) * 356)
+        }
+        else {
+            $('.comparison__wrapper').css('width',($('.comparison__wrap').length + 1) * 200)
+        }
+    }
     $('.nav__category').click(function () {
         $('.nav__drop').slideToggle()
     })

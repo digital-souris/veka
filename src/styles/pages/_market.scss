@@ -231,6 +231,20 @@
 
   &__content {
     padding-top: 120px;
+    &_mobile {
+      display: none;
+      @include media(768) {
+        display: block;
+      }
+    }
+    &_desktop {
+      @include media(768) {
+        display: none;
+      }
+    }
+    @include media(768) {
+      padding-top: 40px;
+    }
   }
   &__head {
     border-bottom: 1px solid #E5E5E5;
@@ -277,6 +291,11 @@
   }
   &__item {
     display: none;
+    @include media(768) {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 15px;
+    }
     &.active {
       display: block;
     }
@@ -289,6 +308,11 @@
     border: 1px solid #E5E5E5;
     @include media(992) {
       display: none;
+    }
+    @include media(768) {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 50px;
     }
     svg {
       margin-bottom: 40px;
@@ -329,12 +353,17 @@
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
+        overflow-x: hidden;
         &::after {
           content: '.....................................................................';
           color: #6E6E6E;
           font-style: normal;
           font-weight: normal;
           font-size: 14px;
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          position: relative;
         }
       }
       b {
@@ -345,6 +374,29 @@
   }
   &__reviews {
     padding-top: 80px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    /* identical to box height */
+    color: #1E1E1E;
+    border-bottom: 1px solid rgba(#4E5B67, .15);
+    padding-bottom: 20px;
+    svg {
+      transition: all .25s;
+      cursor: pointer;
+    }
+    &.active {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
 
@@ -456,6 +508,7 @@
   }
   &__item {
     padding-bottom: 15px;
+
   }
   &__text {
     font-style: normal;

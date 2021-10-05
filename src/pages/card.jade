@@ -101,7 +101,7 @@ block content
                                 span Самовывоз
                                 |  в день заказа
                             span Бесплатно
-        .market__content
+        .market__content.market__content_desktop
             .market__head
                 ul.wrapper_f.wrapper_jcfs.wrapper_aifs
                     li.active
@@ -136,6 +136,29 @@ block content
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4314 21.3363H19.5748C20.186 17.96 24.9741 0 24.9741 0H40.1004L26.072 41.803H11.8399L0 0H14.6434C14.6434 0 18.8843 17.96 19.4314 21.3363ZM44.9525 41.803V0H76.0276V9.86459H58.9204V15.6947H73.111V25.5626H58.9204V31.9318H76.0276V41.803H44.9525ZM108.955 20.1822L120.116 0H105.409L97.6209 14.6927L97.2737 0H83.7095V41.803H97.2737V25.5924L106.435 41.803H121.395H135.82L136.985 36.4259H146.358L147.388 41.803H161.831L150.878 0H133.839L121.395 41.803L108.955 20.1822ZM142.06 9.34209L138.106 27.1665H145.618L142.06 9.34209Z" fill="#0069B4"/>
                     </svg>
                     p Не следует, однако, забывать, что сложившаяся структура организации представляет собой интересный эксперимент проверки первоочередных требований. Ясность нашей позиции очевидна: курс на социально-ориентированный национальный проект выявляет срочную потребность поэтапного и посл....
+        .market__content.market__content_mobile
+            .market__banner
+                <svg width="162" height="42" viewBox="0 0 162 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4314 21.3363H19.5748C20.186 17.96 24.9741 0 24.9741 0H40.1004L26.072 41.803H11.8399L0 0H14.6434C14.6434 0 18.8843 17.96 19.4314 21.3363ZM44.9525 41.803V0H76.0276V9.86459H58.9204V15.6947H73.111V25.5626H58.9204V31.9318H76.0276V41.803H44.9525ZM108.955 20.1822L120.116 0H105.409L97.6209 14.6927L97.2737 0H83.7095V41.803H97.2737V25.5924L106.435 41.803H121.395H135.82L136.985 36.4259H146.358L147.388 41.803H161.831L150.878 0H133.839L121.395 41.803L108.955 20.1822ZM142.06 9.34209L138.106 27.1665H145.618L142.06 9.34209Z" fill="#0069B4"/>
+                </svg>
+                p Не следует, однако, забывать, что сложившаяся структура организации представляет собой интересный эксперимент проверки первоочередных требований. Ясность нашей позиции очевидна: курс на социально-ориентированный национальный проект выявляет срочную потребность поэтапного и посл....
+            .market__mobile
+                .market__header.active
+                    span Характеристики
+                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M14.1333 0L8 6.21622L1.86667 0L0 1.89189L8 10L16 1.89189L14.1333 0Z" fill="#4E5B67"/>
+                    </svg>
+                .market__item
+                    .market__specifications.wrapper_f.wrapper_jcsb.wrapper_aifs.wrapper_wrap
+                        - for(var x = 0; x < 4;x++)
+                            .market__specification
+                                h3 Общие характеристики
+                                - for(var y = 0; y < 8;y++)
+                                    .market__specification-item.wrapper_f.wrapper_jcsb.wrapper_aifs
+                                        span Бренд
+                                        b Veka
+
+
         .market__reviews
             h2.title.title_second.title_dark.title_normal Отзывы
             .reviews__wrap.wrapper_f.wrapper_jcsb.wrapper_aifs
