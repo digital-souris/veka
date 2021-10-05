@@ -19,6 +19,10 @@ module.exports = {
         './src/pages/contacts.jade',
         './src/pages/card.jade',
         './src/pages/korzina.jade',
-        './src/pages/comparison.jade'
+        './src/pages/comparison.jade',
+        './src/pages/lk-1.jade',
+        './src/pages/lk-2.jade',
+        './src/pages/lk-3.jade',
+        './src/pages/lk-4.jade',
     ]
 };

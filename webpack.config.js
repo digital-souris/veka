@@ -39,8 +39,8 @@ if (!devMode) {
 plugins.push(
   new MiniCssExtractPlugin({
     path: path.join(__dirname, "dist/css"),
-    filename: devMode ? "[name].css" : "[name].[hash].css",
-    chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
+    filename: devMode ? "[name].css" : "[name].css",
+    chunkFilename: devMode ? "[id].css" : "[id].css"
   })
 );
 

@@ -24,6 +24,13 @@ $(document).ready(function () {
         nextArrow: $('.market__arrow_next'),
         focusOnSelect: true
     })
+    $('.js-lk-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        variableWidth: true
+    })
     $('.js-market-main').slick({
         infinite: false,
         slidesToShow: 1,

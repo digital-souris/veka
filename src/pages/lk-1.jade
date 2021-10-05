@@ -1,0 +1,29 @@
+extends layout/layout.jade
+
+block content
+    include components/layouts/breadcrumbs.jade
+    .wrapper
+        include components/lk/topline.jade
+        h1.title.title_second.title_dark.title_normal Мои отзывы
+        .lk-wrapper
+            .wrapper_f.wrapper_jcsb.wrapper_aifs
+                .lk-content
+                    - for(var y = 0; y < 5;y++)
+                        .lk-card
+                            .lk-card__head.wrapper_f.wrapper_jcsb.wrapper_aic
+                                .lk-card__status.wrapper_f.wrapper_aic
+                                    span Статус заказа от 4 февраля
+                                    .lk-card__id №232435
+                                .lk-card__price 14 500  ₽
+                            .lk-card__content.wrapper_f.wrapper_jcsb.wrapper_aifs
+                                .lk-card__info
+                                    .lk-card__type Товар собран на складе
+                                    .lk-card__delivery Доставка курьером
+                                    .lk-card__text Доставка 14.02.2021 <br/> Оплата картой при получении
+                                .lk-card__slider.js-lk-slider
+                                    - for(var x = 0; x < 5; x++)
+                                        .lk-card__item
+                                            a(href='#')
+                                                img(src='../img/card-img.png')
+                                                span Название товара в несколько строк тут
+                include components/lk/right.jade

@@ -1,0 +1,14 @@
+extends layout/layout.jade
+
+block content
+    include components/layouts/breadcrumbs.jade
+    .wrapper
+        include components/lk/topline.jade
+        h1.title.title_second.title_dark.title_normal Мои отзывы
+        .lk-wrapper
+            .wrapper_f.wrapper_jcsb.wrapper_aifs
+                .lk-content
+                    .wrapper_f.wrapper_jcfs.wrapper_aifs.wrapper_wrap
+                        - for(var y = 0; y < 10;y++)
+                            include components/items/card-lk.jade
+                include components/lk/right.jade

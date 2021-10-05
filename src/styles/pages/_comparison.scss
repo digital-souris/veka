@@ -17,6 +17,9 @@
       margin-right: 9px;
       vertical-align: middle;
     }
+    @include media(992) {
+      display: none;
+    }
   }
   &__absolute {
     position: absolute;
