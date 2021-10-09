@@ -1,6 +1,9 @@
 .comparison {
   margin-top: 20px;
   position: relative;
+  @include media(768) {
+    display: flex;
+  }
   &__delete {
 
     font-style: normal;
@@ -30,6 +33,9 @@
     //border-right: 1px solid #C4C4C4;
     @include media(992) {
       width: 200px;
+    }
+    @include media(768) {
+      position: relative;
     }
   }
   &__top {
@@ -98,6 +104,9 @@
     @include media(992) {
       padding-left: 200px;
     }
+    @include media(768) {
+      padding-left: 0;
+    }
 
   }
   &__bottom {
@@ -106,6 +115,9 @@
     padding-left: 20px;
     padding-top: 20px;
     border-top: 1px solid #C4C4C4;
+    &_absolute {
+      background-color: #fff;
+    }
     @include media(992) {
       padding: 10px 10px 0;
     }

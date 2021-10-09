@@ -1,6 +1,9 @@
 .news {
   flex-wrap: wrap;
   padding-top: 16px;
+  &-wrap {
+    flex-wrap: wrap;
+  }
   &__banner {
     max-width: 336px;
     width: 50%;

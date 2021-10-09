@@ -11,6 +11,7 @@
     justify-content: space-between;
     padding: 40px 115px;
     position: relative;
+    text-decoration: none;
     @include media(992) {
       padding: 40px 95px;
     }
@@ -26,6 +27,9 @@
 
   &__wrapper {
     position: relative;
+    .slick-disabled {
+      display: none !important;
+    }
   }
 
   &__image {
@@ -109,7 +113,7 @@
   &__button {
     padding-top: 40px;
 
-    a {
+    span {
       display: flex;
       height: 50px;
       width: 185px;

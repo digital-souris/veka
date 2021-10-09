@@ -13,11 +13,11 @@
                 </svg>
             .js-first-slider
                 - for(var x = 0; x < 4; x++)
-                    .slider__item(style='background-image: url(../img/slide-bg.jpg)')
+                    a(href='#').slider__item(style='background-image: url(../img/slide-bg.jpg)')
                         .slider__content
                             h1.slider__title Заголовок оффера в несколько строй
                             p.slider__text Доп текст или призыв к действи
                             .slider__button
-                                a(href='#') Подробнее
+                                span Подробнее
                         .slider__image
                             img(src="../img/slide-img.png" alt='123')

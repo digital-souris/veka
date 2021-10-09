@@ -1,6 +1,7 @@
 .slide {
   height: 100%;
   &__item {
+    text-decoration: none;
     display: flex !important;
     padding-top: 18px;
     padding-bottom: 46px;

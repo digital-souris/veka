@@ -20,6 +20,9 @@
   &__radios {
     padding-top: 35px;
     width: 100%;
+    @include media(768) {
+      flex-wrap: wrap;
+    }
   }
   &__date {
     margin-left: 23px;
@@ -30,10 +33,14 @@
   &__radio {
     display: flex;
     width: calc(100% / 3);
+    @include media(768) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
     &_big {
       width: 50%;
       @include media(768) {
-        width: 70%;
+        width: 100%;
       }
     }
     label {
@@ -190,7 +197,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 35px;
     /* or 250% */
     color: #999999;
     margin-left: 18px;

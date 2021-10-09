@@ -29,7 +29,13 @@ $(document).ready(function () {
         slidesToScroll: 1,
         dots: false,
         arrows: true,
-        variableWidth: true
+        variableWidth: true,
+        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Prev" type="button" style=""><svg width="18" height="8" style="transform: rotate(180deg)" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+            '<path d="M17.0962 4.29984C17.2915 4.10458 17.2915 3.788 17.0962 3.59274L13.9142 0.410755C13.719 0.215493 13.4024 0.215493 13.2071 0.410755C13.0119 0.606017 13.0119 0.9226 13.2071 1.11786L16.0356 3.94629L13.2071 6.77472C13.0119 6.96998 13.0119 7.28656 13.2071 7.48182C13.4024 7.67709 13.719 7.67709 13.9142 7.48182L17.0962 4.29984ZM0.433594 4.44629H16.7427V3.44629H0.433594V4.44629Z" fill="#0069B4"/>\n' +
+            '</svg></button>',
+        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+            '<path d="M17.0962 4.29984C17.2915 4.10458 17.2915 3.788 17.0962 3.59274L13.9142 0.410755C13.719 0.215493 13.4024 0.215493 13.2071 0.410755C13.0119 0.606017 13.0119 0.9226 13.2071 1.11786L16.0356 3.94629L13.2071 6.77472C13.0119 6.96998 13.0119 7.28656 13.2071 7.48182C13.4024 7.67709 13.719 7.67709 13.9142 7.48182L17.0962 4.29984ZM0.433594 4.44629H16.7427V3.44629H0.433594V4.44629Z" fill="#0069B4"/>\n' +
+            '</svg></button>'
     })
     $('.js-market-main').slick({
         infinite: false,
@@ -47,7 +53,7 @@ $(document).ready(function () {
             {
                 breakpoint: 768,
                 settings: {
-                    dots: true,
+                    //dots: true,
                     arrows: false
                 }
             }
@@ -99,7 +105,9 @@ $(function () {
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         prevArrow: $('.slider__arrow_prev'),
         nextArrow: $('.slider__arrow_next'),
         customPaging: function() {
@@ -125,6 +133,17 @@ $(function () {
             console.log(s)
             if (s > top && s < bottom) {
                 $('.basket__order').css('top', s - top + 10)
+            }
+        })
+    }
+    if($('.sidebar_catalog').length) {
+        const top = $('.catalog').position().top
+        const bottom = $('.catalog').height()
+        $(document).scroll(function (e) {
+            const s = $(window).scrollTop()
+            console.log(s)
+            if (s > top && s < bottom) {
+                $('.sidebar_catalog').css('top', s - top - 60)
             }
         })
     }
@@ -169,9 +188,8 @@ function startPopularSlider() {
         else if($(document).width() <= 992 && $('.js-populars').not('.slick-initialized')) {
             $('.js-populars').slick({
                 dots: false,
-                slidesToShow: 2.7,
                 centerMode: true,
-                slidesToScroll: 1,
+                variableWidth: true,
                 infinite: true,
                 customPaging: function() {
                     return '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">' +
@@ -182,7 +200,6 @@ function startPopularSlider() {
                     {
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 1.7,
                             dots: true,
                             centerMode: false,
                         }
@@ -190,7 +207,6 @@ function startPopularSlider() {
                     {
                         breakpoint: 480,
                         settings: {
-                            slidesToShow: 1,
                             centerMode: false,
                             dots: true
                         }
