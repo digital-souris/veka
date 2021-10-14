@@ -4,14 +4,39 @@
     border-top: 1px solid #E5E5E5;
     padding-top: 17px;
   }
+  &__review-wrap {
+    position: relative;
+  }
   &__review-count {
     margin-left: 58px;
+    position: relative;
     svg {
       cursor: pointer;
       margin-right: 4px;
     }
     @include media(768) {
       margin-left: 10px;
+    }
+  }
+  &__review-content {
+    svg {
+      vertical-align: middle;
+      * {
+        fill: transparent;
+        stroke: #0069B4;
+      }
+    }
+  }
+  &__review-active {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    svg {
+      vertical-align: middle;
+      * {
+        fill: #0069B4;
+      }
     }
   }
   &__comment-count {
