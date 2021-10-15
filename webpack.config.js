@@ -75,7 +75,7 @@ module.exports = {
         use: [
           {
             loader: "html-loader",
-            options: { minimize: projectConfig.minifyHTML }
+            //options: { minimize: projectConfig.minifyHTML }
           }
         ]
       },
@@ -84,9 +84,17 @@ module.exports = {
         use: [
           {
             loader: "html-loader",
-            options: { minimize: projectConfig.minifyHTML }
+            options: {
+              minimize: false
+            },
+            //options: { minimize: projectConfig.minifyHTML }
           },
-          "pug-html-loader"
+          {
+            loader: "pug-html-loader",
+            options: {
+              pretty: true
+            }
+          }
         ]
       },
       {
